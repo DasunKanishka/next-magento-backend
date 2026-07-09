@@ -2,7 +2,7 @@
 # The host already runs system nginx on :80 and host MySQL on :3306, so the
 # default docker-magento bindings (80/443, 3306, 6379, 9200) would collide.
 # System nginx reverse-proxies https://249.magento.default (:443) ->
-# https://127.0.0.1:8443 (this app container). See clarifications.md #1.
+# https://127.0.0.1:8443 (this app container).
 #
 # The `!override` tag REPLACES each base `ports` list rather than concatenating
 # it (Docker Compose default merge behaviour), so the conflicting :80/:3306
